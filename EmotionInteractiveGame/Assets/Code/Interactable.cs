@@ -32,6 +32,15 @@ public class Interactable : MonoBehaviour
             Debug.Log("Player now in range");
         }
     }
+    
+    private void OnTriggerExit(Collider collission)
+    {
+        if(collission.gameObject.CompareTag("Player"))
+        {
+            isInRange = false;
+            Debug.Log("Player now not in range");
+        }
+    }
 
     
 }

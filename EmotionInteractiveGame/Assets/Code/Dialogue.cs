@@ -20,7 +20,17 @@ public class Dialogue : MonoBehaviour
 
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            if(textComponent.text == lines[index])
+            {
+                NextLine();
+            }
+            else{
+                StopAllCoroutines();
+                textComponent.text = lines[index];
+            }
+        }
     }
 
     void StartDialogue()
@@ -29,7 +39,7 @@ public class Dialogue : MonoBehaviour
         StartCoroutine(TypeLine());
     }
 
-    IEnumerable TypeLine()
+    IEnumerator TypeLine()
     {
         foreach (char c in lines[index].ToCharArray())
         {
@@ -37,4 +47,19 @@ public class Dialogue : MonoBehaviour
             yield return new WaitForSeconds(textSpeed);
         }
     }
+
+    void NextLine()
+    {
+        if(index < lines.Length - 1)
+        {
+            index++;
+            textComponent.text = string.Empty;
+            StartCoroutine(TypeLine());
+;        }
+        else
+        {
+            gameObject.SetActive(false);
+        }
+    }
+    
 }
