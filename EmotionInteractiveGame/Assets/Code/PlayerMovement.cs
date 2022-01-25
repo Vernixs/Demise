@@ -46,17 +46,6 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
 
-        if(Input.GetButtonDown("E"))
-        {
-        Ray ray = new Ray(transform.position, transform.forward);
-        RaycastHit hit;
-
-            if(Physics.Raycast(ray, out hit))
-            {
-                Debug.Log("We hit" + hit.collider.name + "" + hit.point);
-            }
-        }
-
     }
     
 
