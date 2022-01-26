@@ -11,6 +11,7 @@ public class Dialogue : MonoBehaviour
     public float textSpeed;
     private int index;
 
+
     void Start()
     {
         textComponent.text = string.Empty;
