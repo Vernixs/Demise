@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
 
-public class Player : MonoBehaviour
+/*public class Player : MonoBehaviour
 {
     [SerializeField]
     private float _speed;
@@ -23,10 +23,21 @@ public class Player : MonoBehaviour
 
     private void OnEnable()
     {
-        _playerActions.Player_actions.Enable();
+        _playerActions.Player_Map.Enable();
+    }
+    private void OnDisable()
+    {
+        _playerActions.Player_Map.Disable();
+    }
+
+    private void FixedUpdate()
+    {
+        _moveInput = _playerActions.Player_Map.Movement.ReadValue<Vector3>();
+        _moveInput.y = 0f;
+        _rbody.velocity = _moveInput * _speed;
     }
 
 
 
-
 }
+*/

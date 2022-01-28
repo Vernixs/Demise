@@ -10,5 +10,6 @@ public class Teleportation : MonoBehaviour
     void onTriggerEnter(Collider other)
     {
         thePlayer.transform.position = teleportTarget.transform.position;
+        Debug.Log("Touched but no tp");
     }
 }

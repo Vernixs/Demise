@@ -2,7 +2,7 @@
     "name": "PlayerMovement",
     "maps": [
         {
-            "name": "Player actions",
+            "name": "Player_Map",
             "id": "795891aa-5f68-4244-9c08-1317ec2901a8",
             "actions": [
                 {
@@ -11,7 +11,8 @@
                     "id": "59cfa1be-0e91-4f35-adba-2a1b32164a04",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
