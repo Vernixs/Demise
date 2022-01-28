@@ -40,7 +40,7 @@ public class InputManager : MonoBehaviour
 		}
 	}
 
-	public void jumpPressed(InputAction.CallbackContext context)
+	public void JumpPressed(InputAction.CallbackContext context)
 	{
 		if (context.performed)
 		{
