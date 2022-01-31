@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class Teleportation : MonoBehaviour
 {
-    public GameObject teleportTarget;
+    public Transform teleportTarget;
     public GameObject thePlayer;
 
     void onTriggerEnter(Collider other)
     {
-        thePlayer.transform.position = teleportTarget.transform.position;
-        Debug.Log("Touched but no tp");
+        if (other.CompareTag("Player"))
+        {
+            other.transform.localPosition = teleportTarget.localPosition;
+        }
+
+
     }
+    
 }
