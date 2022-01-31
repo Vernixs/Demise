@@ -11,7 +11,7 @@ public class SelectionManager : MonoBehaviour
     private Transform  _selection;
     void Update()
     {
-        /*if (_selection != null)
+        if (_selection != null)
         {
             var selectionRenderer = _selection.GetComponent<Renderer>();
             selectionRenderer.material = defaultMaterial;
@@ -32,6 +32,6 @@ public class SelectionManager : MonoBehaviour
                 }
                 _selection = selection;
             }
-        }*/
+        }
     }
 }

@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 
 
-public class InputManager : MonoBehaviour
+
+/*public class InputManager : MonoBehaviour
 {
 	private Vector2 moveDirection = Vector2.zero;
 	private bool jumpPressed = false;
@@ -55,3 +55,4 @@ public class InputManager : MonoBehaviour
 
 
 }
+*/
