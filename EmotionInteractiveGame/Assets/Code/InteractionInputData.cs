@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName = "InteractionInputData", menuName = "EmotionInteractiveGame/InteractionInputData")]
-public class InteractionInputData : ScriptableObject 
+public class InteractionInputData : MonoBehaviour
 {
-    
+    private GameObject dialogueSystem;
 
+    void Update()
+    {
+        if (Input.GetButtonDown("E"))
+    }
 }
 
 
