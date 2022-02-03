@@ -1,6 +1,6 @@
 ﻿title: Start
 ---
-<<set $shapes_like_you to true>>
+<<set $spokenToNpc to false>>
 Sphere: Hello, I am Blue Sphere.
 Cube: Hi there Sphere! I'm Red Cube.
 Sphere: And who is this then?
@@ -26,7 +26,8 @@ Sphere: And who is this then?
 // then they don't like you now
 <<jump BadEnding>>
 ===
-title: TwoTruthsGame
+title: Npc
+position: -10.0794, -10.04858
 ---
 <<set $rounds_won to 0>>
 Cube: I'll go first! Hmmm...
