@@ -10,6 +10,9 @@ public class InteractionInputData : MonoBehaviour
     void Update()
     {
         if (Input.GetButtonDown("E"))
+        {
+
+        }
     }
 }
 
