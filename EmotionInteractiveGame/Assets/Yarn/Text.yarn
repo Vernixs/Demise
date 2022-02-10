@@ -30,14 +30,14 @@ title: Npc
 position: -10.0794, -10.04858
 ---
 <<set $rounds_won to 0>>
-Cube: I'll go first! Hmmm...
-Cube: I have 6 faces. I have 12 edges. My favourite colour is blue.
-Cube: What do you think is the lie?
--> The number of faces.
+NPC: I'll go first! Hmmm...
+HUGHES: I have 6 faces. I have 12 edges. My favourite colour is blue.
+HUGHES: What do you think is the lie?
+-> Would you still like to enter the forest?.
 -> The one about edges.
 -> Your favourite colour, obviously.
     <<set $rounds_won += 1>>
-Sphere: I agree.
+Sphere: Sure.
 
 <<if $rounds_won > 0>>
     Cube: You're too smart!
