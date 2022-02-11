@@ -100,7 +100,7 @@
       }
     },
     "dev.yarnspinner.unity": {
-      "version": "file:C:/Users/enecelis2021/Documents/GitHub/Demise/YarnSpinner-Unity-main",
+      "version": "file:C:/Users/enecelis2021/Documents/Demise/YarnSpinner-Unity-main",
       "depth": 0,
       "source": "local",
       "dependencies": {
