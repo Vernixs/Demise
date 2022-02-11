@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Nextlevel : MonoBehaviour
 {
-  void OnCollissionEnter(Collision collision)
+  public void OnCollissionEnter(Collision collision)
   {
 		SceneManager.LoadScene(2);
   }
