@@ -26,7 +26,7 @@ Sphere: And who is this then?
 // then they don't like you now
 <<jump BadEnding>>
 ===
-title: Npc
+title: Lucy
 position: -10.0794, -10.04858
 ---
 <<set $rounds_won to 0>>

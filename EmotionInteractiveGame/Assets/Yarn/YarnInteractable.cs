@@ -27,7 +27,9 @@ public class YarnInteractable : MonoBehaviour {
     }
 
     public void OnMouseDown() {
+        Debug.Log("1");
         if (interactable && !dialogueRunner.IsDialogueRunning) {
+            Debug.Log("2");
             StartConversation();
         }
     }
